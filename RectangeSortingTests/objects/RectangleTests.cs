@@ -1,8 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using RectangeSorting.objects;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace RectangeSorting.objects.Tests
 {

@@ -8,12 +8,12 @@ namespace RectangeSorting
     {
         static void Main(string[] args)
         {
-            var rectangles = RectangleSortingUtils.GetRectanglesFromFile("../../../input.txt");
+            var rectangles = HelperUtils.GetRectanglesFromFile("assets/input.txt");
             foreach (var rectangle in rectangles.OrderBy(item => item.Diagonal))
             {
                 Console.WriteLine($"{rectangle.GetArea()}, {rectangle.RectangleType}");
             }
-            Console.WriteLine($"{RectangleSortingUtils.GetPercentOfSquares(rectangles)}");
+            Console.WriteLine($"{HelperUtils.GetPercentOfSquares(rectangles)}");
         }
     }
 }

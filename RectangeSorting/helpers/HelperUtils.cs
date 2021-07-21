@@ -6,7 +6,7 @@ using System.IO;
 
 namespace RectangeSorting.helpers
 {
-    public static class RectangleSortingUtils
+    public static class HelperUtils
     {
         public static List<Rectangle> GetRectanglesFromFile(string filename)
         {
