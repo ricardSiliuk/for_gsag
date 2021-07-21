@@ -9,10 +9,10 @@ namespace RectangeSorting
         static void Main(string[] args)
         {
             var rectangles = HelperUtils.GetRectanglesFromFile("assets/input.txt");
-            foreach (var rectangle in rectangles.OrderBy(item => item.Diagonal))
-            {
-                Console.WriteLine($"{rectangle.GetArea()}, {rectangle.RectangleType}");
-            }
+            rectangles
+                .OrderBy(item => item.Diagonal)
+                .ToList()
+                .ForEach(item => Console.WriteLine($"{item.GetArea()}, {item.RectangleType}"));
             Console.WriteLine($"{HelperUtils.GetPercentOfSquares(rectangles)}");
         }
     }
